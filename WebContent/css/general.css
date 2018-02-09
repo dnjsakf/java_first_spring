@@ -1,0 +1,45 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+#main_header{
+	height: 100px;
+	background-color: lightgreen;
+}
+#main_section{
+	height: calc(100% - 100px);	
+	background-color: lightblue;
+}
+#main_section > #left_section{
+	z-index: 2;
+	position: absolute;
+	width: 300px;
+	height: inherit;
+	
+	background-color: #999;
+}
+#main_section > #right_section{
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	padding-left: 300px;
+	
+	background-color: #fff;
+}
+#main_footer{
+	height: 100px;
+	background-color: lightgray;
+}
+
+a{
+	text-decoration: none;	
+}
+a[href]:hover{
+	color: red;
+}
